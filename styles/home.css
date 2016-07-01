@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, ul, li {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
@@ -11,8 +11,9 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     background: url('../img/wot-masthead-dark.jpg') center no-repeat;
     background-size: cover;
-
 }
+
+
 
 .main-header {
     width: 100%;
@@ -38,6 +39,7 @@ h1,h2,h3,h4,h5,h6 {
     width:100%;
 }
 
+
 .mid-section {
     display: flex;
     flex-direction: column;
@@ -60,6 +62,7 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 40px;
     color: #bdd436;
     background: none;
+    cursor: pointer;
 }
 .mid-section button:active {
     color: #fff;
@@ -68,4 +71,247 @@ h1,h2,h3,h4,h5,h6 {
 
 .mid-section button:focus {
   outline: none;
+}
+
+.bot-section{
+  width: 100%;
+  padding:25px;
+}
+
+.desc-section h3{
+  color:#6A787C;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.42;
+  font-weight:500;
+  padding: 2rem;
+}
+
+.greenBox{
+  background: #bdd436;
+  height:8px;
+  width:25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+}
+
+.scw{
+  width: 100%;
+  padding:25px;
+  background:#F0F0F0;
+  min-height: 460px;
+}
+
+.scw-box{
+  margin: auto;
+  background: white;
+  text-align: center;
+  padding:4rem;
+  margin-bottom: 2rem;
+  min-height: 416px;
+
+}
+
+.scw-head{
+  font-weight: 900;
+  font-size: 30px;
+  color: #6a787c;
+  margin-bottom: 1rem;
+}
+
+.scw-box h6{
+  font-weight:500;
+  color:#97A2A7;
+  line-height: 1.8;
+  letter-spacing: 1px;
+
+}
+
+.btn{
+  margin-top: 1rem;
+  background: transparent;
+  width:80%;
+  border: none;
+  color: #bdd436;
+  white-space: nowrap;
+  line-height:1.42;
+  font-size:16px;
+  font-weight:700;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+}
+
+.footer-buffer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footer-head{
+  font-weight: 900;
+  font-size: 30px;
+  color: #6a787c;
+  margin-bottom: 1rem;
+  padding:2rem;
+}
+
+.footer-img{
+  width: 100%;
+  min-height:40vh;
+  background: url('../img/wot-office-shirts.jpg')center no-repeat;
+  background-size: cover;
+}
+
+.help{
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7rem;
+
+}
+
+.help-item{
+  color:#97A2A7;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  width:80%;
+  padding-top:1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  font-weight:900;
+
+
+}
+
+.partners{
+  width:100%;
+  background:#F0F0F0;
+}
+
+.p-icon{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-bottom: 7vh;
+}
+
+#partner-head{
+  text-align: center;
+}
+
+.contact{
+  width: 100%;
+  text-align: center;
+  color:white;
+  background:#6A787C;
+  padding-top:5rem;
+  padding-bottom: 5rem;
+}
+
+#talk{
+  color:white;
+}
+
+#talking{
+  letter-spacing:1px;
+  font-weight: 900;
+    color:white;
+    line-height: 1.5;
+}
+
+.contact button {
+    width: 65%;
+    border: 2px solid #bdd436;
+    padding: 20px;
+    border-radius: 40px;
+    color: #bdd436;
+    background: none;
+    cursor: pointer;
+}
+
+.contact button:active {
+    color: #fff;
+    background: #bdd436;
+}
+
+.contact button:focus {
+  outline: none;
+}
+
+@media(min-width:750px){
+  .mid-section h1{
+    width:40%;
+
+  }
+  .HAM{
+    display: none;
+  }
+  button.main-cta{
+    width:20%;
+  }
+  .desc-section h3{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .scw{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .scw-box{
+    align-items: flex-start;
+    width:25%;
+    padding:0;
+    padding-top:4rem;
+    /*width:25%;
+    /*float:left;
+    padding: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-left:6%;
+    max-width: 300px;*/
+
+  }
+  .footer-img{
+    min-height:70vh;
+  }
+  .footer-buffer{
+    clear:left;
+  }
+  .p-icon{
+    display: flex;
+
+/* Then we define the flow direction and if we allow the items to wrap
+ * Remember this is the same as:
+ * flex-direction: row;
+ * flex-wrap: wrap;
+ */
+    flex-flow: row wrap;
+
+/* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    float:left;
+  }
+
+  }
+  .p-icon img{
+
+  }
+  .partners{
+    /*justify-content: space-between;*/
+  }
+  .contact{
+    clear:left;
+  }
+  #talking{
+    width:40%;
+  }
 }
